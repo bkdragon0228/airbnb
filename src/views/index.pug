@@ -1,0 +1,90 @@
+extends layout
+
+block content
+
+  header 에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.
+  
+  main
+    section#banner
+      div
+        div
+            img.logo(src="", alt="")
+        div.menubar
+            div
+                button.button 숙소 
+            div
+                button.button(style="padding-left: 20px; padding-right: 20px") 체험 
+            div
+                button.button 온라인 체험
+        div
+      div 
+      div.mainbar 
+            h1(style="font-size:40px") 슬기로운 자연
+            h1(style="font-size:40px") 생활
+            p 에어비앤비가 엄선한 위시리스트를 만나보세요.
+            P 
+              button.idea 여행 아이디어 얻기
+    section#smallFrame 
+      div.title
+        h2 가까운 여행지 둘러보기
+
+      div(style="display:flex; width:100%")
+        div.destination
+          include index/smallFrame/small.pug
+          include index/smallFrame/small.pug          
+        div.destination
+          include index/smallFrame/small.pug
+          include index/smallFrame/small.pug
+        div.destination
+          include index/smallFrame/small.pug
+          include index/smallFrame/small.pug
+        div.destination
+          include index/smallFrame/small.pug
+          include index/smallFrame/small.pug
+
+    section#middleFrame 
+      div.title
+        h2 어디에서나, 여행은 살아보는 거야! 
+      div#innerFrame
+          div.go
+              img.experienceImg(src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=480", alt="", srcset="")
+              h5(style="margin:0px;") 자연생활을 만끽할 수 있는 숙소
+          div.go
+              img.experienceImg(src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480", alt="", srcset="")
+              h5(style="margin:0px;") 독특한 공간
+          div.go
+              img.experienceImg(src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=480", alt="", srcset="")
+              h5(style="margin:0px;") 집 전체
+          div.go
+              img.experienceImg(src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=480", alt="", srcset="")
+              h5(style="margin:0px;") 반려동물 쌉가능
+    section#bigFirstFrame(style="background-image:https://a0.muscache.com/im/pictures/2595054e-d1d9-4fde-8046-58d51fcb3164.jpg?im_w=1440") 
+      div.unmainbar 
+            h1(style="font-size:40px") 호스팅 시작하기
+            p 숙소를 공유하여 부수입을 올리고 새로운 가능성
+            p 을 만나세요.
+            P 
+              button.idea 자세히 알아보기
+            p(style="color:black;") 띄어쓰기 
+            p(style="color:black;") 띄어쓰기
+
+    section#bigSecondFrame
+      include index/experience.pug
+    section#bigThirdFrame 
+        div.lastbar 
+            img(src="", alt="")
+            p 100개 이상의 신규 기능을 소개합니다
+            P 
+              button.idea 자세히 알아보기
+            p(style="color:white;") 띄어쓰기 
+            p(style="color:white;") 띄어쓰기
+  footer
+      div
+        p 소개
+        p 뉴스룸
+        p 투자자 정보
+        p 에어비앤비 플러스
+        p 에어비앤비 Live
+      div
+      div
+      div 
